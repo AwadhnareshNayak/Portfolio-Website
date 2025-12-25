@@ -3,16 +3,6 @@ import { motion } from 'framer-motion'
 import "../CSS/Home.css"
 import '../index.css' 
 
-
-// 🖼️ Import Assets
-import photo from '../../public/photo.jpg'
-import githubLogo from '../../public/github.png'
-import linkedinLogo from '../../public/linkedin.png'
-import gmailLogo from '../../public/gmail.png'
-import whatsappLogo from '../../public/whatsapp.png'
-import instagramLogo from '../../public/insta.png'
-import facebookLogo from '../../public/facebook.png'
-
 export default function Home() {
   const professions = [
     'Git',
@@ -23,12 +13,12 @@ export default function Home() {
   ]
 
   const quickLinks = [
-    { img: githubLogo, title: 'GitHub', link: 'https://github.com/AwadhnareshNayak' },
-    { img: linkedinLogo, title: 'LinkedIn', link: 'https://www.linkedin.com/in/awadhnaresh-nayak-5a5977237/' },
-    { img: gmailLogo, title: 'Email', link: 'mailto:awadhnaresh02@gmail.com' },
-    { img: whatsappLogo, title: 'WhatsApp', link: 'https://wa.me/+916260419871' },
-    { img: instagramLogo, title: 'Instagram', link: 'https://www.instagram.com/awadh_02?igsh=aTVzZWoxZzNwbHRs' },
-    { img: facebookLogo, title: 'Facebook', link: 'https://www.facebook.com/share/1D1HYc7qC2/' },
+    { img: '/github.png', title: 'GitHub', link: 'https://github.com/AwadhnareshNayak' },
+    { img: '/linkedin.png', title: 'LinkedIn', link: 'https://www.linkedin.com/in/awadhnaresh-nayak-5a5977237/' },
+    { img: '/gmail.png', title: 'Email', link: 'mailto:awadhnaresh02@gmail.com' },
+    { img: '/whatsapp.png', title: 'WhatsApp', link: 'https://wa.me/+916260419871' },
+    { img: '/insta.png', title: 'Instagram', link: 'https://www.instagram.com/awadh_02?igsh=aTVzZWoxZzNwbHRs' },
+    { img: '/facebook.png', title: 'Facebook', link: 'https://www.facebook.com/share/1D1HYc7qC2/' },
   ]
 
   return (
@@ -61,8 +51,8 @@ export default function Home() {
             className="photo-frame"
           >
             <motion.img
-              src={photo}
-              alt="Kunj Desai"
+              src="/photo.jpg"
+              alt="Awadhnaresh Nayak"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 1 }}
@@ -89,28 +79,35 @@ export default function Home() {
             </motion.span>
           </h1>
 
-          {/* Typing Animated Text */}
           <p className="typing-effect">
             MERN Stack Developer | Frontend Developer | Tech Explorer
           </p>
 
-          {/* Profession Tags */}
           <motion.div className="profession-tags">
             {professions.map((role, i) => (
-              <motion.div key={i} whileHover={{ scale: 1.05, background: 'linear-gradient(90deg,var(--accent),var(--accent-2))' }} transition={{ type: 'spring', stiffness: 200 }} className="profession-tag">
+              <motion.div
+                key={i}
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: 'spring', stiffness: 200 }}
+                className="profession-tag"
+              >
                 {role}
               </motion.div>
             ))}
           </motion.div>
 
-          {/* Info Cards */}
           <motion.div className="info-cards">
             {[
               { label: '📍 Location', value: 'Indore, Madhya Pradesh, India' },
-              { label: '💼 Expertise', value: 'Developer,Security' },
+              { label: '💼 Expertise', value: 'Developer, Security' },
               { label: '📧 Contact', value: 'awadhnaresh02@gmail.com' },
             ].map((info, i) => (
-              <motion.div key={i} whileHover={{ y: -4, scale: 1.05 }} transition={{ type: 'spring', stiffness: 250 }} className="info-card">
+              <motion.div
+                key={i}
+                whileHover={{ y: -4, scale: 1.05 }}
+                transition={{ type: 'spring', stiffness: 250 }}
+                className="info-card"
+              >
                 <strong>{info.label}</strong>
                 <p>{info.value}</p>
               </motion.div>
@@ -130,20 +127,18 @@ export default function Home() {
               title={item.title}
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.15, rotate: 5 }}
+              whileHover={{ scale: 1.15 }}
               transition={{ type: 'spring', stiffness: 250 }}
             >
               <motion.img
                 src={item.img}
                 alt={item.title}
-                whileHover={{ filter: 'drop-shadow(0 0 15px var(--accent)) brightness(1.2)' }}
                 className="quick-link-img"
               />
             </motion.a>
           ))}
         </div>
       </motion.div>
-
     </section>
   )
 }
