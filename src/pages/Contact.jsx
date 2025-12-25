@@ -2,15 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 
-import githubLogo from "../../public/github.png";
-import linkedinLogo from "../../public/linkedin.png";
-import gmailLogo from "../../public/gmail.png";
-import whatsappLogo from "../../public/whatsapp.png";
-import instagramLogo from "../../public/insta.png";
-import facebookLogo from "../../public/facebook.png";
-
-import "../CSS/Contact.css"
-import '../index.css' 
+import "../CSS/Contact.css";
+import "../index.css";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -67,12 +60,12 @@ export default function Contact() {
   };
 
   const quickLinks = [
-    { img: githubLogo, title: "GitHub", link: "https://github.com/AwadhnareshNayak" },
-    { img: linkedinLogo, title: "LinkedIn", link: "https://www.linkedin.com/in/awadhnaresh-nayak-5a5977237/" },
-    { img: gmailLogo, title: "Email", link: "mailto:awadhnaresh02@gmail.com" },
-    { img: whatsappLogo, title: "WhatsApp", link: "https://wa.me/+916260419871" },
-    { img: instagramLogo, title: "Instagram", link: "https://www.instagram.com/awadh_02?igsh=aTVzZWoxZzNwbHRs" },
-    { img: facebookLogo, title: "Facebook", link: "https://www.facebook.com/share/1D1HYc7qC2/" },
+    { img: "/github.png", title: "GitHub", link: "https://github.com/AwadhnareshNayak" },
+    { img: "/linkedin.png", title: "LinkedIn", link: "https://www.linkedin.com/in/awadhnaresh-nayak-5a5977237/" },
+    { img: "/gmail.png", title: "Email", link: "mailto:awadhnaresh02@gmail.com" },
+    { img: "/whatsapp.png", title: "WhatsApp", link: "https://wa.me/+916260419871" },
+    { img: "/insta.png", title: "Instagram", link: "https://www.instagram.com/awadh_02?igsh=aTVzZWoxZzNwbHRs" },
+    { img: "/facebook.png", title: "Facebook", link: "https://www.facebook.com/share/1D1HYc7qC2/" },
   ];
 
   return (
@@ -138,7 +131,16 @@ export default function Contact() {
           🚀 Send Message
         </motion.button>
 
-        {status && <motion.p initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="contact-status">{status}</motion.p>}
+        {status && (
+          <motion.p
+            initial={{ opacity: 0, y: 5 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            className="contact-status"
+          >
+            {status}
+          </motion.p>
+        )}
       </motion.form>
     </section>
   );
