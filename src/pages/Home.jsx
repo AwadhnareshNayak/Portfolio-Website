@@ -1,25 +1,34 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import "../CSS/Home.css"
-import "../index.css"
+import React from "react";
+import { motion } from "framer-motion";
+import "../CSS/Home.css";
+import "../index.css";
+
+// ✅ IMPORT IMAGES FROM SRC (VITE + VERCEL SAFE)
+import photo from "../assets/photo.jpg";
+import github from "../assets/github.png";
+import linkedin from "../assets/linkedin.png";
+import gmail from "../assets/gmail.png";
+import whatsapp from "../assets/whatsapp.png";
+import insta from "../assets/insta.png";
+import facebook from "../assets/facebook.png";
 
 export default function Home() {
   const professions = [
-    'Git',
-    'MongoDB',
-    'MySQL',
-    'Socket Programming',
-    'MERN Stack Developer',
-  ]
+    "Git",
+    "MongoDB",
+    "MySQL",
+    "Socket Programming",
+    "MERN Stack Developer",
+  ];
 
   const quickLinks = [
-    { img: '/github.png', title: 'GitHub', link: 'https://github.com/AwadhnareshNayak' },
-    { img: '/linkedin.png', title: 'LinkedIn', link: 'https://www.linkedin.com/in/awadhnaresh-nayak-5a5977237/' },
-    { img: '/gmail.png', title: 'Email', link: 'mailto:awadhnaresh02@gmail.com' },
-    { img: '/whatsapp.png', title: 'WhatsApp', link: 'https://wa.me/+916260419871' },
-    { img: '/insta.png', title: 'Instagram', link: 'https://www.instagram.com/awadh_02' },
-    { img: '/facebook.png', title: 'Facebook', link: 'https://www.facebook.com/share/1D1HYc7qC2/' },
-  ]
+    { img: github, title: "GitHub", link: "https://github.com/AwadhnareshNayak" },
+    { img: linkedin, title: "LinkedIn", link: "https://www.linkedin.com/in/awadhnaresh-nayak-5a5977237/" },
+    { img: gmail, title: "Email", link: "mailto:awadhnaresh02@gmail.com" },
+    { img: whatsapp, title: "WhatsApp", link: "https://wa.me/916260419871" },
+    { img: insta, title: "Instagram", link: "https://www.instagram.com/awadh_02" },
+    { img: facebook, title: "Facebook", link: "https://www.facebook.com/share/1D1HYc7qC2/" },
+  ];
 
   return (
     <section className="home-section">
@@ -31,7 +40,7 @@ export default function Home() {
           <div className="photo-ring"></div>
           <div className="photo-frame">
             <img
-              src="/photo.jpg"
+              src={photo}
               alt="Awadhnaresh Nayak"
               className="profile-photo"
             />
@@ -68,18 +77,22 @@ export default function Home() {
         </div>
       </div>
 
-      {/* SOCIAL */}
+      {/* SOCIAL LINKS */}
       <div className="quick-links">
         <h2 className="quick-links-title">Connect with me</h2>
         <div className="quick-links-list">
           {quickLinks.map((item, i) => (
-            <a key={i} href={item.link} target="_blank">
-              <img src={item.img} alt={item.title} className="quick-link-img" />
+            <a key={i} href={item.link} target="_blank" rel="noreferrer">
+              <img
+                src={item.img}
+                alt={item.title}
+                className="quick-link-img"
+              />
             </a>
           ))}
         </div>
       </div>
 
     </section>
-  )
+  );
 }
