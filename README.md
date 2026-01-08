@@ -70,15 +70,18 @@ MERN Stack Developer | Full Stack Enthusiast
 
 📬 Contact
 If you’d like to collaborate or just say hi 👋, feel free to reach out!
+
 📧 Email: awadhnaresh02@gmail.com
 💼 LinkedIn: https://www.linkedin.com/in/awadhnaresh-nayak-5a5977237/
 💻 GitHub: https://github.com/AwadhnareshNayak
 
 🌟 Deployment
+
 This project is deployed on Vercel for fast performance and continuous deployment.
 Every push to the main branch automatically triggers a new build and deployment.
 
 🏁 License
+
 This project is open source and available under the MIT License.
 Feel free to fork, use, and customize it for your own portfolio ⭐
 
