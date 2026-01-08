@@ -3,35 +3,43 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "../CSS/Gallery.css";
 
+// 🔥 Import images (SAFE way for deploy)
+import matheran from "../assets/gallery/matheran.jpg";
+import matheran2 from "../assets/gallery/matheran2.jpg";
+import photo1 from "../assets/gallery/Photo1.jpg";
+import photo2 from "../assets/gallery/Photo2.jpg";
+import leet from "../assets/gallery/leet.jpeg";
+import techlead from "../assets/gallery/techlead.png";
+
 const IMAGES = {
   personal: [
     {
       id: 1,
       caption: "Lost in the beauty of the misty forest 🌲🌫️",
-      photos: ["/gallery/matheran.jpg", "/gallery/matheran2.jpg"],
+      photos: [matheran, matheran2],   // ✅ fixed
     },
     {
       id: 2,
       caption:
         "Weekend getaway to clear my head 🌄 Sometimes inspiration strikes when you’re away from the screen.",
-      photos: ["/gallery/Photo1.jpg", "/gallery/Photo2.jpg"],
+      photos: [photo1, photo2],       // ✅ fixed
     },
   ],
   achievements: [
     {
       id: 1,
       caption: "Solved 1000 LeetCode questions 🏆!",
-      photos: ["/gallery/leet.jpeg"],
+      photos: [leet],                 // ✅ fixed
     },
     {
       id: 2,
       caption: "Technical Lead at SCET AI Club 🤖",
-      photos: ["/gallery/techlead.png"],
+      photos: [techlead],             // ✅ fixed
     },
   ],
 };
 
-// ✨ Animation Variants
+// ✨ Animation Variants (UNCHANGED)
 const pageVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -51,7 +59,6 @@ const childVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
-// ✨ Tab Switching Animations
 const tabContentVariants = {
   hidden: { opacity: 0, y: 30, scale: 0.98 },
   visible: {
@@ -93,14 +100,12 @@ export default function Gallery() {
       animate="visible"
       exit="hidden"
     >
-      {/* 🌟 Title */}
       <motion.h2 className="gallery-title" variants={childVariants}>
         Gallery
       </motion.h2>
 
-      {/* 🧭 Tabs */}
       <motion.div className="tab-buttons" variants={childVariants}>
-        {["personal",  "achievements"].map((type) => (
+        {["personal", "achievements"].map((type) => (
           <motion.button
             key={type}
             className={`tab ${tab === type ? "active" : ""}`}
@@ -113,10 +118,9 @@ export default function Gallery() {
         ))}
       </motion.div>
 
-      {/* 🖼️ Posts with Animation on Tab Switch */}
       <AnimatePresence mode="wait">
         <motion.div
-          key={tab} // Important for AnimatePresence to detect tab change
+          key={tab}
           className="post-feed"
           variants={tabContentVariants}
           initial="hidden"
@@ -153,7 +157,6 @@ export default function Gallery() {
         </motion.div>
       </AnimatePresence>
 
-      {/* 🔍 Zoom Overlay */}
       <AnimatePresence>
         {zoom.img && (
           <motion.div
