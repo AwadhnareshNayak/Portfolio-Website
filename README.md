@@ -11,73 +11,26 @@ This website showcases my projects, skills, certifications, gallery, and resume,
 <img width="1890" height="1015" alt="image" src="https://github.com/user-attachments/assets/29104792-0ed1-4921-875a-b2c2cccc1f28" />
 
 
+## 🚀 Features
+- 🎨 Modern dark-themed UI with aesthetic design  
+- ⚡ Smooth animations powered by Framer Motion  
+- 💼 Dedicated sections for Projects, Resume, and Contact  
+- 🏆 Certificates & achievements showcase  
+- 🖼️ Interactive Gallery with zoom preview  
+- 📱 Fully responsive across all devices  
+
+## 🛠️ Tech Stack
+
+| Category | Tools / Libraries |
+|----------|------------------|
+| Frontend | React.js, HTML5, CSS3, JavaScript (ES6+) |
+| Styling | Tailwind CSS / Custom CSS |
+| Animation | Framer Motion |
+| Version Control | Git & GitHub |
+| Deployment | Vercel |
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-🚀 Features
-🎨 Modern dark-themed UI with aesthetic design
-⚡ Smooth animations powered by Framer Motion
-💼 Dedicated sections for Projects, Resume, and Contact
-🏆 Certificates & achievements showcase
-🖼️ Interactive Gallery with zoom preview
-📱 Fully responsive across all devices
-
-🛠️ Tech Stack
-Category	Tools / Libraries
-Frontend	React.js, HTML5, CSS3, JavaScript (ES6+)
-Styling	Tailwind CSS / Custom CSS
-Animation	Framer Motion
-Version Control	Git & GitHub
-Deployment	Vercel
-
-⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 To run this project locally:
 
 # 1️⃣ Clone the repository
@@ -89,11 +42,11 @@ npm install
 # 4️⃣ Run development server
 npm run dev
 
-
 Now open in your browser:
-👉 http://localhost:5173 🚀
+👉 http://localhost:5173🚀
 
 📄 Resume
+
 The resume is embedded directly in the website and can also be downloaded.
 Path used in the project:
 public/files/resume.pdf
