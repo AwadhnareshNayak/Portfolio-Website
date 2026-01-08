@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import resumePDF from "../assets/resume.pdf";
 
 export default function Resume() {
   return (
@@ -221,7 +222,7 @@ export default function Resume() {
           }}
         >
           <iframe
-            src="/resume.pdf"   // ✅ public/resume.pdf
+            src={resumePDF}   // ✅ public/resume.pdf
             title="Awadhnaresh Nayak Resume"
             style={{
               width: "100%",
