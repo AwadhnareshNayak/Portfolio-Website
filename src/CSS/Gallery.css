@@ -107,8 +107,11 @@
 .photo-item img {
   width: 100%;
   height: 100%;
-  object-fit: contain;     /* poori photo dikhegi */
-  background: #0b0b0b;     /* same theme */
+  object-fit: contain;   /* 🔥 bas yahi change */
+  background: #0b0b0b;   /* theme same */
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 .photo-item:hover img {
