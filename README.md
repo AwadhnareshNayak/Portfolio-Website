@@ -61,8 +61,6 @@ This website showcases my projects, skills, certifications, gallery, and resume,
 
 
 
-
-
 🚀 Features
 🎨 Modern dark-themed UI with aesthetic design
 ⚡ Smooth animations powered by Framer Motion
