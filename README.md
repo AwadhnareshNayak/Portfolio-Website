@@ -43,37 +43,34 @@ npm install
 npm run dev
 
 Now open in your browser:
-👉 http://localhost:5173🚀
+👉 http://localhost:5173
+ 🚀
 
 📄 Resume
 
 The resume is embedded directly in the website and can also be downloaded.
+
 Path used in the project:
+
 public/files/resume.pdf
 
 👨‍💻 About Me
+
 Awadhnaresh Nayak
 MERN Stack Developer | Full Stack Enthusiast
 
 🎓 B.Tech in Information Technology
+
 🛡️ Pursuing PG Diploma in Advanced Secure Software Development (C-DAC, Hyderabad)
+
 💡 Interested in building secure, scalable, and modern web applications
 
 📬 Contact
+
 If you’d like to collaborate or just say hi 👋, feel free to reach out!
 
 📧 Email: awadhnaresh02@gmail.com
+
 💼 LinkedIn: https://www.linkedin.com/in/awadhnaresh-nayak-5a5977237/
+
 💻 GitHub: https://github.com/AwadhnareshNayak
-
-🌟 Deployment
-
-This project is deployed on Vercel for fast performance and continuous deployment.
-Every push to the main branch automatically triggers a new build and deployment.
-
-🏁 License
-
-This project is open source and available under the MIT License.
-Feel free to fork, use, and customize it for your own portfolio ⭐
-
-“Showcasing my work and passion through technology 💻”
