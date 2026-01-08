@@ -8,7 +8,7 @@ const CERTS = {
       title: "AWS Certificate",
       org: "AWS",
       date: "2023",
-      img: "/certs/AWS certificate.jpg",
+      img: "/public/certs/AWS certificate.jpg",
       link: "/certs/AWS certificate.jpg",
     },
     {
