@@ -55,7 +55,7 @@ export default function Resume() {
             <h3 style={{ fontSize: 24, color: "#00b4ff", marginBottom: 4 }}>
               👨‍💻 Awadhnaresh Nayak
             </h3>
-            <p style={{ margintop: 10, fontSize: 15, color: "#ccc" }}>
+            <p style={{ marginTop: 10, fontSize: 15, color: "#ccc" }}>
               Chameli Devi Group of Institutions | RGPV University, Bhopal
             </p>
             <p style={{ margin: "4px 0", fontSize: 14, color: "#aaa" }}>
@@ -80,12 +80,16 @@ export default function Resume() {
           >
             <strong style={{ color: "#00b4ff" }}>Professional Summary:</strong>
             <p style={{ marginTop: 6, color: "#ccc" }}>
-              Completed B.Tech in Information Technology with hands-on knowledge in MERN Stack Development, Socket Programming, and Git. Skilled in building modern web applications and applying robust development practices to create efficient, secure, and scalable software solutions.
+              Completed B.Tech in Information Technology with hands-on knowledge
+              in MERN Stack Development, Socket Programming, and Git. Skilled in
+              building modern web applications and applying robust development
+              practices to create efficient, secure, and scalable software
+              solutions.
             </p>
           </motion.div>
         </motion.div>
 
-        {/* Education Section with Border Box */}
+        {/* Education */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -103,21 +107,22 @@ export default function Resume() {
           </h4>
           <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
             <li>
-              <strong>PG Diploma in Advanced Secure Software Development </strong> — (C-DAC), Hyderabad, PRESENT <br />
+              <strong>PG Diploma in Advanced Secure Software Development</strong> — (C-DAC),
+              Hyderabad, PRESENT
             </li>
             <li>
-              <strong>B.Tech in Information Technology</strong> — CDGI
-              (RGPV University), 2021–2025 <br />
+              <strong>B.Tech in Information Technology</strong> — CDGI (RGPV University),
+              2021–2025 <br />
               <span style={{ color: "#aaa" }}>CGPA: 6.31</span>
             </li>
             <li style={{ marginTop: 8 }}>
-              <strong>12th Board —  Sunshine Public Higher Secondary School</strong> (M.P.
-              Board, 2021) <br />
+              <strong>12th Board — Sunshine Public Higher Secondary School</strong> (M.P. Board,
+              2021) <br />
               <span style={{ color: "#aaa" }}>Percentage: 67%</span>
             </li>
             <li style={{ marginTop: 8 }}>
-              <strong>10th Board —  Krishna Convent Higher Secondary School</strong> (M.P. Board, 2019)
-              <br />
+              <strong>10th Board — Krishna Convent Higher Secondary School</strong> (M.P. Board,
+              2019) <br />
               <span style={{ color: "#aaa" }}>Percentage: 67%</span>
             </li>
           </ul>
@@ -130,7 +135,9 @@ export default function Resume() {
           transition={{ delay: 0.8 }}
           style={{ marginTop: 40 }}
         >
-          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>💼 Projects</h4>
+          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>
+            💼 Projects
+          </h4>
           <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
             <li>1️⃣ Responsive Login Register form</li>
             <li>2️⃣ Portfolio Website</li>
@@ -145,25 +152,15 @@ export default function Resume() {
           transition={{ delay: 1 }}
           style={{ marginTop: 40 }}
         >
-          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>⚙️ Skills</h4>
+          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>
+            ⚙️ Skills
+          </h4>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {[
-              "C",
-              "C++",
-              "React",
-              "HTML",
-              "CSS",
-              "JavaScript",
-              "Node.JS",
-              "Express.JS",
-              "MySQL",
-              "MongoDB",
-              "Git",
-              "Socket Programming",
-              "Problem Solving",
-              "Teamwork",
-              "Adaptability",
-              "Creativity",
+              "C","C++","React","HTML","CSS","JavaScript",
+              "Node.JS","Express.JS","MySQL","MongoDB","Git",
+              "Socket Programming","Problem Solving","Teamwork",
+              "Adaptability","Creativity",
             ].map((skill) => (
               <motion.span
                 key={skill}
@@ -181,16 +178,13 @@ export default function Resume() {
             ))}
           </div>
         </motion.div>
+
+        {/* Links */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.4 }}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: 30,
-            marginTop: 40,
-          }}
+          style={{ display: "flex", justifyContent: "center", gap: 30, marginTop: 40 }}
         >
           {[
             { name: "💻 GitHub", link: "https://github.com/AwadhnareshNayak" },
@@ -227,8 +221,8 @@ export default function Resume() {
           }}
         >
           <iframe
-            src="/resume.pdf"
-            title="Kunj Desai Resume"
+            src="/resume.pdf"   // ✅ public/resume.pdf
+            title="Awadhnaresh Nayak Resume"
             style={{
               width: "100%",
               height: "650px",
@@ -258,8 +252,6 @@ export default function Resume() {
         >
           ⬇️ Download Resume
         </motion.a>
-
-
       </motion.div>
     </section>
   );
