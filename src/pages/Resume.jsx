@@ -134,7 +134,7 @@ export default function Resume() {
           <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
             <li>1️⃣ Responsive Login Register form</li>
             <li>2️⃣ Portfolio Website</li>
-            <li>3️⃣ Indian Sign Language Interpreter (In Progress)</li>
+            <li>3️⃣ Insider Threat Detection using User Behavior Analytics (In Progress)</li>
           </ul>
         </motion.div>
 
