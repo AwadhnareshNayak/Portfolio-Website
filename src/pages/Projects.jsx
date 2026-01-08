@@ -2,24 +2,28 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Github, ExternalLink } from 'lucide-react'
 
+import loginImg from "../assets/projects/login.png";
+import portfolioImg from "../assets/projects/portfolio.jpg";
+
 const PROJECTS = [
   {
-  title: 'Responsive Login Register form',
-  desc: 'Designed and developed a responsive login page using HTML, CSS, and JavaScript, focusing on clean UI, form validation, and cross-device compatibility.',
-  ss: 'login.png',
-  tech: ['HTML', 'CSS', 'JavaScript'],
-  live: '#',
-  code: 'https://github.com/AwadhnareshNayak'
+    title: 'Responsive Login Register form',
+    desc: 'Designed and developed a responsive login page using HTML, CSS, and JavaScript, focusing on clean UI, form validation, and cross-device compatibility.',
+    ss: loginImg,
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    live: '#',
+    code: 'https://github.com/AwadhnareshNayak'
   },
   {
-  title: '💼 Portfolio Website',
-  desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
-  ss: '/portfolio.jpg',
-  tech: ['React', 'Framer Motion', 'Tailwind CSS'],
-  live: '#',
-  code: 'https://github.com/AwadhnareshNayak'
+    title: '💼 Portfolio Website',
+    desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
+    ss: portfolioImg,
+    tech: ['React', 'Framer Motion', 'Tailwind CSS'],
+    live: '#',
+    code: 'https://github.com/AwadhnareshNayak'
   },
 ]
+
 
 export default function Projects() {
   return (
