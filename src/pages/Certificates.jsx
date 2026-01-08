@@ -1,43 +1,51 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-// ✅ Correct certificate data (fixed paths)
+// 🔥 Import images (BEST & SAFE way)
+import aws from "../assets/certs/aws-certificate.jpg";
+import cpp from "../assets/certs/c-cpp-certificate.png";
+import javaCert from "../assets/certs/java-certificate.png";
+import iit from "../assets/certs/iit-internship.jpg";
+import reactNode from "../assets/certs/react-node-certificate.jpg";
+import eds from "../assets/certs/eds-upskilling.jpg";
+
+// ✅ Certificate data (now using imports)
 const CERTS = {
   tech: [
     {
       title: "AWS Certificate",
       org: "AWS",
       date: "2023",
-      img: "/certs/aws-certificate.jpg",
-      link: "/certs/aws-certificate.jpg",
+      img: aws,
+      link: aws,
     },
     {
       title: "C and C++",
       org: "Certified",
       date: "2022",
-      img: "/certs/c-cpp-certificate.png",
-      link: "/certs/c-cpp-certificate.png",
+      img: cpp,
+      link: cpp,
     },
     {
       title: "JAVA",
       org: "Certified",
       date: "2023",
-      img: "/certs/java-certificate.png",
-      link: "/certs/java-certificate.png",
+      img: javaCert,
+      link: javaCert,
     },
     {
       title: "IIT Internship",
       org: "Certified",
       date: "2022",
-      img: "/certs/iit-internship.jpg",
-      link: "/certs/iit-internship.jpg",
+      img: iit,
+      link: iit,
     },
     {
       title: "React.JS & Node.JS Training",
       org: "Certified",
       date: "2023",
-      img: "/certs/react-node-certificate.jpg",
-      link: "/certs/react-node-certificate.jpg",
+      img: reactNode,
+      link: reactNode,
     },
   ],
   other: [
@@ -45,8 +53,8 @@ const CERTS = {
       title: "IEEE",
       org: "EDS Upskilling Course",
       date: "2023",
-      img: "/certs/eds-upskilling.jpg",
-      link: "/certs/eds-upskilling.jpg",
+      img: eds,
+      link: eds,
     },
   ],
 };
@@ -58,7 +66,9 @@ export default function Certificates() {
   return (
     <section className="container" style={{ padding: "40px 0" }}>
       <div className="card" style={{ background: "#111", borderRadius: 12, padding: 24 }}>
-        <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: 4 }}>Certificates 🏅</h2>
+        <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: 4 }}>
+          Certificates 🏅
+        </h2>
         <p className="lead" style={{ color: "#aaa" }}>
           Explore my certifications — technical & others.
         </p>
@@ -127,6 +137,7 @@ export default function Certificates() {
                     marginBottom: 12,
                   }}
                 />
+
                 <strong style={{ fontSize: 16 }}>{c.title}</strong>
                 <div className="muted" style={{ fontSize: 13, color: "#bbb" }}>
                   {c.org} • {c.date}
