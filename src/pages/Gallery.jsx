@@ -8,36 +8,24 @@ import matheran from "../assets/gallery/matheran.jpg";
 import matheran2 from "../assets/gallery/matheran2.jpg";
 import photo1 from "../assets/gallery/Photo1.jpg";
 import photo2 from "../assets/gallery/Photo2.jpg";
-import leet from "../assets/gallery/leet.jpeg";
-import techlead from "../assets/gallery/techlead.png";
 
 const IMAGES = {
   personal: [
     {
       id: 1,
       caption: "Lost in the beauty of the misty forest 🌲🌫️",
-      photos: [matheran, matheran2],   // ✅ fixed
+      photos: [matheran, matheran2],
     },
     {
       id: 2,
       caption:
         "Weekend getaway to clear my head 🌄 Sometimes inspiration strikes when you’re away from the screen.",
-      photos: [photo1, photo2],       // ✅ fixed
+      photos: [photo1, photo2],
     },
   ],
-  achievements: [
-    {
-      id: 1,
-      caption: "Solved 1000 LeetCode questions 🏆!",
-      photos: [leet],                 // ✅ fixed
-    },
-    {
-      id: 2,
-      caption: "Technical Lead at SCET AI Club 🤖",
-      photos: [techlead],             // ✅ fixed
-    },
-  ],
+  achievements: [],   // 🔥 TEMP EMPTY (no files exist yet)
 };
+
 
 // ✨ Animation Variants (UNCHANGED)
 const pageVariants = {
