@@ -1,43 +1,43 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-// ✅ Certificates data (added URLs for View button)
+// ✅ Correct certificate data (fixed paths)
 const CERTS = {
   tech: [
     {
       title: "AWS Certificate",
       org: "AWS",
       date: "2023",
-      img: "/certs/AWS certificate.jpg",
-      link: "/certs/AWS certificate.jpg",
+      img: "/certs/aws-certificate.jpg",
+      link: "/certs/aws-certificate.jpg",
     },
     {
       title: "C and C++",
       org: "Certified",
       date: "2022",
-      img: "/certs/C,C++ Certificate.png",
-      link: "/certs/C,C++ Certificate.png",
+      img: "/certs/c-cpp-certificate.png",
+      link: "/certs/c-cpp-certificate.png",
     },
     {
       title: "JAVA",
       org: "Certified",
       date: "2023",
-      img: "/certs/Java Certificate.png",
-      link: "/certs/Java Certificate.png",
+      img: "/certs/java-certificate.png",
+      link: "/certs/java-certificate.png",
     },
     {
       title: "IIT Internship",
       org: "Certified",
       date: "2022",
-      img: "/certs/IIT Internship.jpg",
-      link: "/certs/IIT Internship.jpg",
+      img: "/certs/iit-internship.jpg",
+      link: "/certs/iit-internship.jpg",
     },
     {
-      title: "React.JS & Node.JS Tranning",
+      title: "React.JS & Node.JS Training",
       org: "Certified",
       date: "2023",
-      img: "/certs/React.JS & Node.JS.jpg",
-      link: "/certs/React.JS & Node.JS.jpg",
+      img: "/certs/react-node-certificate.jpg",
+      link: "/certs/react-node-certificate.jpg",
     },
   ],
   other: [
@@ -45,8 +45,8 @@ const CERTS = {
       title: "IEEE",
       org: "EDS Upskilling Course",
       date: "2023",
-      img: "/public/certs/EDS Upskilling Course.jpg",
-      link: "public/certs/EDS Upskilling Course.jpg",
+      img: "/certs/eds-upskilling.jpg",
+      link: "/certs/eds-upskilling.jpg",
     },
   ],
 };
